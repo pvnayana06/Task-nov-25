@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Largest among five numbers</title>
+    </head>
+
+    <body>
+
+        <h3>The largest of five numbers</h3>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>1st number</p>
+        <input type="number" id="a"><br><br>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>2nd number</p>
+        <input type="number" id="b"><br><br>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>3rd number</p>
+        <input type="number" id="c"><br><br>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>4th number</p>
+        <input type="number" id="d"><br><br>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>5th number</p>
+        <input type="number" id="e"><br><br>
+
+        <button onclick="myFunction()">Result</button>
+
+<script>
+
+    function myFunction()
+    {
+      var n1 =(document.getElementById("a").value);
+      var n2 =(document.getElementById("b").value);
+      var n3 =(document.getElementById("c").value);
+      var n4 =(document.getElementById("d").value);
+      var n5 =(document.getElementById("e").value);
+    
+        if (n1>n2 && n1>n3 && n1>n4 && n1>n5)
+         {
+            alert(n1 + " is larger");
+         }
+        else if (n2>n1 && n2>n3 && n2>n4 && n2>n5)
+         {
+            alert(n2 + " is larger");
+         }
+        else if (n3>n1 && n3>n2 && n3>n4 && n3>n5)
+         {    
+            alert(n3 + " is larger");
+         }
+        else if (n4>n1 && n4>n2 && n4>n3 && n4>n5)
+        {
+            alert(n4 + " is larger");
+        }
+        else
+        {
+            alert(n5 + " is larger");
+        }
+    }
+
+</script>   
+</body>
+</html>

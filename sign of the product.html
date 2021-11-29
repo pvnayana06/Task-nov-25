@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>sign of the product</title>
+    </head>
+
+    <body>
+
+        <h3>The sign of the product of three numbers</h3>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>1st number</p>
+        <input type="number" id="a"><br><br>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>2nd number</p>
+        <input type="number" id="b"><br><br>
+
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>3rd number</p>
+        <input type="number" id="c"><br><br>
+
+        <button onclick="myFunction()">Result</button>
+
+<script>
+
+    function myFunction()
+    {
+      var n1 =(document.getElementById("a").value);
+      var n2 =(document.getElementById("b").value);
+      var n3 =(document.getElementById("c").value);
+      var n4=(n1 * n2 * n3);
+    
+        if (n4>0)
+         {
+            alert("+");
+         }
+        else 
+         {
+            alert("-");
+         }
+    }
+
+</script>   
+</body>
+</html>

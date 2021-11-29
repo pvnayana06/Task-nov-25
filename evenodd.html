@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Even Or Odd</title>
+        <meta charset=utf-8 />
+    </head>
+    <body>
+        <p style="color:rgb(37, 8, 8); margin-left: 100px";>Enter the number</p>
+        <input type="number" id="num"><br><br>
+        <button onclick="myFunction()">Result</button>
+    
+        <script>
+
+            function myFunction()
+            {
+            let num =(document.getElementById("num").value);
+               for(num=0;num<=15;num++) 
+                 {
+    	           if(num%2==0)
+                   {
+        	           window.alert(num+" is an even number. ");
+        	        }
+                   else 
+                   {
+        	          window.alert(num+ " is an odd number. ");
+    		        }
+    	        }
+            }
+         </script>
+        
+    </body>
+</html>

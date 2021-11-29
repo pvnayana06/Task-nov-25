@@ -1,0 +1,35 @@
+<html>
+<head>
+ <title>Find the Largest Number</title>
+</head>
+<body >
+  <h1 style="color :rgb(0, 5, 14); text-align: left;"> The Largest Number</h1>
+
+  <p style="color:rgb(37, 8, 8); margin-left: 100px";>1st number</p>
+  <input type="number" id="a"><br><br>
+  
+  <p style="color:rgb(37, 8, 8); margin-left: 100px";>2nd number</p>
+  <input type="number" id="b"><br><br><br><br>
+
+  <button onclick="myFunction()">Result</button>
+    
+  <script>
+
+    function myFunction()
+    {
+      let n1 = (document.getElementById("a").value);
+      let n2 = (document.getElementById("b").value);
+
+        if (n1 > n2)
+         {
+            alert(n1+ " is larger than " +n2);
+         }
+        else 
+         {
+            alert(n2+ " is larger than " +n1);
+         }
+    }
+  </script>
+
+</body>
+</html>
